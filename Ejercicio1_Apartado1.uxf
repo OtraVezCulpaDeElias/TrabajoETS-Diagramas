@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>190</y><w>210</w><h>80</h></coordinates><panel_attributes>Persona
+--
+-nombre : string
+-apellidos : string
+-fechaNacimiento : DateTime 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>340</y><w>210</w><h>50</h></coordinates><panel_attributes>Profesor
+--
+-asignatura : string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>330</y><w>210</w><h>60</h></coordinates><panel_attributes>Alumno
+--
+-notas : List&lt;decimal&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>260</y><w>210</w><h>80</h></coordinates><panel_attributes>Ciclo
+--
+-grado : string
+-curso : string
+-modalidad : string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>480</y><w>210</w><h>100</h></coordinates><panel_attributes>Curso
+--
+--
++Matricular()
++Desmatricular()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>360</y><w>210</w><h>80</h></coordinates><panel_attributes>FP
+--
+-nombrePadre : string
+-nombreMadre : string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>30</y><w>300</w><h>70</h></coordinates><panel_attributes>Instituto
+--
+--
++ContarAlumnos(alumnado : List&lt;Alumno&gt;)
++ContarProfesores(profesorado : List&lt;Profesor&gt;)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>90</y><w>50</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1..1
+
+1..N</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>260</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;140;50;140;70</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>260</y><w>180</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;160;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>380</y><w>70</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1..1
+
+1..N</panel_attributes><additional_attributes>50;160;10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>380</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1..1
+
+1..N</panel_attributes><additional_attributes>10;160;40;160;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>300</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;60;60;60;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>350</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10;60;60;100;60</additional_attributes></element></diagram>
